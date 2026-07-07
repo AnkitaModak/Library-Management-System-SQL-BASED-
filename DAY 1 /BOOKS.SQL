@@ -1,0 +1,12 @@
+CREATE TABLE BOOKS(
+    bookId VARCHAR2(20) PRIMARY KEY NOT NULL,
+    bookTitle VARCHAR2(20),
+    ISBN VARCHAR2(20)NOT NULL,
+    genre VARCHAR2(20),
+    publisher VARCHAR2(20),
+    publishYear VARCHAR2(10),
+    price VARCHAR2(15),
+    noOfCopies VARCHAR2(20),
+    shelfLoc VARCHAR2(20) NOT NULL,
+    bookAuth VARCHAR2(20)
+);
