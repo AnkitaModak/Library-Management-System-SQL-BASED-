@@ -1,0 +1,2 @@
+/*Display members who have not borrowed any books since joining the library.*/
+SELECT M.MEMBERID ,M.MEMBERNAME ,BR.BORROWID FROM MEMBERS M FULL OUTER JOIN BORROW BR ON M.MEMBERID = BR.BORROWID WHERE BR.BORROWID IS NULL;
