@@ -5,7 +5,6 @@ Display:
 Book Title
 Price*/
 SELECT 
-BOOKID,
 BOOKTITLE,
 BOOKS_PRICE
 FROM BOOKS
