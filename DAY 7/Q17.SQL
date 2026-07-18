@@ -1,0 +1,6 @@
+--Display member cities that do not appear as author nationalities.
+SELECT CITY FROM MEMBERS WHERE CITY NOT IN(SELECT CITY
+FROM MEMBERS
+INTERSECT
+SELECT NATIONALITY
+FROM AUTHORS);
