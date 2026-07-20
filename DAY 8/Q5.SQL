@@ -1,0 +1,17 @@
+/*The finance department only works with fines.
+
+Create a view displaying:
+
+Borrow ID
+Member Name
+Book Title
+Fine Amount*/
+CREATE VIEW FINE_VIEW AS
+SELECT 
+BR.BORROWID,
+M.MEMBERNAME,
+B.BOOKTITLE,
+BR.FINEAMT
+FROM MEMBERS M 
+INNER JOIN BORROW BR ON M.MEMBERID = BR.MEMBERID
+INNER JOIN BOOKS B ON B.BOOKID = BR.BOOKID;
