@@ -1,0 +1,34 @@
+Structure of a PL/SQL Block
+----------------------------------------------------------
+Every PL/SQL block follows this basic structure:
+
+DECLARE
+   -- Variable declarations
+
+BEGIN
+   -- Executable statements
+
+EXCEPTION
+   -- Error handling (optional)
+
+END;
+/
+Variables
+-----------------------------------------------------------
+A variable stores a value.
+
+Example:
+
+DECLARE
+   v_name VARCHAR2(30);
+BEGIN
+   v_name := 'Ankita';
+   DBMS_OUTPUT.PUT_LINE(v_name);
+END;
+/
+DISPLAY
+-----------------------------------------------------------
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('Welcome to ABC Library');
+END;
+/
