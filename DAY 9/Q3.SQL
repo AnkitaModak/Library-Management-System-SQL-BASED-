@@ -1,0 +1,1 @@
+--Retrieve the title of book B001 using SELECT ... INTO and display it.
