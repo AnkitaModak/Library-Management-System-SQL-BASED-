@@ -1,0 +1,1 @@
+--Retrieve the fine amount for borrow record BR003 into a variable and display it.
