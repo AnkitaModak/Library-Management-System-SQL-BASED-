@@ -4,6 +4,7 @@ If FINEAMT > 0
 → Print "Fine Pending"
 Otherwise
 → Print "No Fine"*/
+SET SERVEROUTPUT ON;
 DECLARE
    VK_FINE BORROW.FINEAMT%TYPE;
 BEGIN
