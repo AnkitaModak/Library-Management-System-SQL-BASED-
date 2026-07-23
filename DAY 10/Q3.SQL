@@ -1,0 +1,28 @@
+/*Topic 3: IF...ELSIF...ELSE
+Client Work Order #3
+
+Classify the fine amount.
+
+Fine = 0
+Print No Fine
+Fine ≤ 100
+Print Small Fine
+Fine > 100
+Print Heavy Fine*/
+DECLARE
+   VK_FINE BORROW.FINEAMT%TYPE;
+BEGIN
+   SELECT FINEAMT
+   INTO VK_FINE
+   FROM BORROW
+   WHERE BORROWID = 'BR003';
+
+   IF VK_FINE <= 100 THEN
+      DBMS_OUTPUT.PUT_LINE('SMALL FINE');
+    ELSIF VK_FINE>100 THEN
+        DBMS_OUTPUT.PUT_LINE('HEAVY FINE');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('NO FINE');
+   END IF;
+END;
+/
